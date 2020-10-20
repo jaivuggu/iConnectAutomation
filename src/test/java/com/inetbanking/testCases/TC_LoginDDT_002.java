@@ -35,7 +35,7 @@ public class TC_LoginDDT_002 extends BaseClass
 		else
 		{
 			Assert.assertTrue(true);
-			logger.info("Login passed");
+			logger.info("**Login passed**");
 			lp.clickLogout();
 			Thread.sleep(3000);
 			driver.switchTo().alert().accept();//close logout alert
