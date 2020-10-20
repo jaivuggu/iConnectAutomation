@@ -370,3 +370,8 @@
 2020-10-19 23:35:09,556 - ebanking -INFO - Entered password
 2020-10-19 23:35:10,292 - ebanking -INFO - Submitted
 2020-10-19 23:35:10,298 - ebanking -INFO - Login test passed
+2020-10-20 13:51:51,432 - ebanking -INFO - URL is opened
+2020-10-20 13:51:51,500 - ebanking -INFO - Entered username
+2020-10-20 13:51:51,547 - ebanking -INFO - Entered password
+2020-10-20 13:51:52,302 - ebanking -INFO - Submitted
+2020-10-20 13:51:52,307 - ebanking -INFO - Login test passed
