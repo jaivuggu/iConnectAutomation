@@ -31,8 +31,8 @@ public class Reporting extends TestListenerAdapter
 	{
 		String timeStamp = new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date());//time stamp
 		String repName="Test-Report-"+timeStamp+".html";
-		
-		htmlReporter=new ExtentHtmlReporter(System.getProperty("user.dir")+ "/Extent-"+repName);//specify location of the report
+		System.out.println(System.getProperty("user.dir"));
+		htmlReporter=new ExtentHtmlReporter(System.getProperty("user.dir")+ "/Test-Automation-Reports/"+repName);//specify location of the report
 		htmlReporter.loadXMLConfig(System.getProperty("user.dir")+ "/extent-config.xml");
 		
 		extent=new ExtentReports();
@@ -40,7 +40,7 @@ public class Reporting extends TestListenerAdapter
 		extent.attachReporter(htmlReporter);
 		extent.setSystemInfo("Host name","localhost");
 		extent.setSystemInfo("Environemnt","QA");
-		extent.setSystemInfo("user","pavan");
+		extent.setSystemInfo("user","p");
 		
 		htmlReporter.config().setDocumentTitle("InetBanking Test Project"); // Tile of report
 		htmlReporter.config().setReportName("Functional Test Automation Report"); // name of the report
